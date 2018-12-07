@@ -1,0 +1,61 @@
+<!-- Full Page Intro -->
+<div class="view">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container">
+            <!--Grid row-->
+            <div class="row mt-5">
+                <!--Grid column-->
+                <div class="d-none d-md-inline col-md-6 mb-5 mt-md-0 mt-5 text-white text-center text-md-left">
+                    <h1 class=" display-2 font-weight-bold animated fadeInLeft">PEUA</h1>
+                    <h2 class="mt-0 animated fadeInLeft">Programa de Seguimiento de Egresados Y Vinculación con Empleadores</h2>
+                    <hr class="hr-light">
+                    <h6 class="mb-3 animated fadeInLeft">El Área de Gestión de la Trayectoria del Estudiante le corresponde diseñar, implementar y evaluar un sistema de seguimiento integral del estudiante que abarque la trayectoria completa de su proceso de formación.</h6>
+                    <a href="http://desarrollocurricular.uantof.cl/" mat-stroked-button class="animated fadeInLeft text-white border-white border-button-outline">Leer Mas</a>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-6 col-xl-5 mb-4">
+                    <!--Form-->
+                    <div class="card animated fadeInRight">
+                        <div class="card-body">
+                            <!--Header-->
+                            <div class="text-center">
+                                <img class="img-fluid img-logoUA" src="../../assets/images/logo-ua-blanco.png">
+
+                                <hr class="hr-light">
+                            </div>
+                            <!--Body-->
+                            <mat-form-field class="CamposLogin text-white" style="width: 100%;">
+                                <input class="text-white " matInput placeholder="Email" [formControl]="email " required>
+                                <mat-error *ngIf="email.invalid ">{{getErrorMessage()}}</mat-error>
+                                <mat-icon matPrefix>email &nbsp;</mat-icon>
+                                <mat-icon matPrefix>&nbsp;</mat-icon>
+                            </mat-form-field>
+                            <mat-form-field class="CamposLogin text-white" style="width: 100%; ">
+                                <input class="text-white " matInput placeholder="Password " [type]="hide ? 'password' : 'text' ">
+                                <mat-icon matPrefix>vpn_key &nbsp;</mat-icon>
+                                <mat-icon matPrefix>&nbsp;</mat-icon>
+                                <mat-icon matSuffix (click)="hide=! hide ">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </mat-form-field>
+                            <div class="text-center mt-4 ">
+                                <button mat-raised-button class="bg-info btn-block btn-lg text-white">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Form-->
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+</div>
+<!-- Full Page Intro -->
+<!-- Main navigation -->
+<!--Main Layout-->
+
+<!--Main Layout-->
