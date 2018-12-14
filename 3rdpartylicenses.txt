@@ -423,6 +423,8 @@ MIT
 
 @angular/material/toolbar
 
+@angular/material/menu
+
 zone.js
 MIT
 The MIT License
